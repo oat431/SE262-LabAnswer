@@ -1,0 +1,25 @@
+body {
+  margin: 0;
+  text-align: center;
+}
+h1 {
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, sans-serif;
+  font-size: 3rem;
+  margin-top: 0;
+  padding-top: 100px;
+}
+
+/* top-container */
+.top-container {
+  background-color: #b8e4f0;
+}
+.top-cloud {
+  position: absolute;
+  right: 300px;
+  top: 60px;
+}
+.bottom-cloud {
+  position: absolute;
+  top: 200px;
+  left: 200px;
+}
