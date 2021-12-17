@@ -1,0 +1,25 @@
+/* Add class to configure the container's padding 2%  */
+.container{
+  padding: 2%;
+}
+
+.letter-column {
+  padding: 20px;
+}
+.border {
+  border: solid 1px;
+  border-radius: 25px;
+}
+.box {
+  height: 200px;
+}
+.box p {
+    padding: 20px 0;
+    text-align: center;
+    font-size: 5rem;
+    color: maroon;
+}
+
+b{
+  color: violet;
+}
