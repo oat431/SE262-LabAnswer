@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Censored Keybord No.4</title>
+  </head>
+  <body>
+    <input type="text" />
+  </body>
+
+  <script>
+    let field = document.querySelector("input");
+    /**
+     * Your Code here.
+     * Hints:
+     * > Prevent default behavior of key events
+     * > You can handle “keypress” or “keydown”
+     * > Look into “preventDefault”
+     * > Use “key” to look at the letter
+     * > In “keyDown” you don’t have to worry about case
+     */
+    window.addEventListener("keydown", (event) => {
+      if (
+        event.key == "q" ||
+        event.key == "w" ||
+        event.key == "x" ||
+        event.key == "Q" ||
+        event.key == "W" ||
+        event.key == "X"
+      ) {
+        event.preventDefault();
+      }
+    });
+  </script>
+</html>

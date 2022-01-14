@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Rainbow No.5</title>
+  </head>
+
+  <body>
+    <button>RED</button>
+    <button>ORANGE</button>
+    <button>YELLOW</button>
+    <button>GREEN</button>
+    <button>BLUE</button>
+    <button>PURPLE</button>
+
+    <script>
+      function changeColor(color) {
+        document.bgColor = color;
+      }
+      document.body.addEventListener("click", (event) => {
+        if (event.target.nodeName == "BUTTON") {
+            document.body.style.backgroundColor = event.target.textContent;
+        }
+      });
+    </script>
+  </body>
+</html>
