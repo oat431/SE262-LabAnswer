@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Life in Weeks</title>
+  </head>
+  <body>
+    <!-- You are going to create a function that tells us how many days, weeks and monthss you have left if you live until 90 years old. 
+It will take your current age as the input and console.logs a message with your time left in this format"
+You have x days, y weeks and z months left. -->
+
+    <script>
+      var currentAge = prompt("What is your current age?");
+      function lifeInWeeks(currentAge) {
+        var remainYear = 90 - currentAge;
+        var remainTime = {};
+        remainTime.days = remainYear * 365;
+        remainTime.weeks = remainYear * 52;
+        remainTime.months = remainYear * 12;
+
+        return remainTime;
+      }
+
+      var remainTime = lifeInWeeks(currentAge);
+alert( "You have " +
+          remainTime.days +
+          " days, " +
+          remainTime.weeks +
+          " weeks and " +
+          remainTime.months +
+          " months left.");
+      console.log(
+        "You have " +
+          remainTime.days +
+          " days, " +
+          remainTime.weeks +
+          " weeks and " +
+          remainTime.months +
+          " months left."
+      );
+    </script>
+  </body>
+</html>

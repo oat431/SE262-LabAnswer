@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bean Count</title>
+</head>
+<body>
+
+
+    <script>
+    function countBs(word)
+    {
+        var count = 0;
+        for (var i = 0; i < word.length; i++) {
+            if (word[i] == "B") {
+                count++;
+            }
+        }
+
+        return count;
+    }
+   
+   
+    function countChar(word, ch)
+    {
+        var count = 0;
+        for (var i = 0; i < word.length; i++) {
+            if (word[i] == ch) {
+                count++;
+            }
+        }
+
+        return count;
+    }
+
+    console.log("Output of the countBs(\"BBC\") function is " + countBs("BBC"));
+    
+    console.log("Output of the countChar('kakkerlak', 'k') function is " + countChar('kakkerlak', 'k'));
+    </script>
+
+</body>
+</html>
